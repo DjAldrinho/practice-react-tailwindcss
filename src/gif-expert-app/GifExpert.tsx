@@ -6,7 +6,7 @@ import { ListGif } from '../components/list-gifs/ListGif';
 
 export const GifExpertApp = () => {
 
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('One Piece');
 
   return (
     <div className="container mx-auto p-7">
@@ -14,7 +14,7 @@ export const GifExpertApp = () => {
       <hr/>
       <div
         className="rounded-t-xl overflow-hidden bg-gradient-to-r from-gray-50 to-gray-100 p-10 mt-2 shadow-md">
-        <div className="h-70 grid grid-cols-2 grid-flow-col gap-4">
+        <div className="h-70 grid grid-row-2 lg:grid-cols-2 lg:grid-flow-col lg:gap-4">
           <ListCategories setSearch={setSearch}/>
           <SearchGif showRecent={true}
                      setSearch={setSearch}/>

@@ -84,7 +84,7 @@ export const SearchGif = ({ showRecent, setSearch }: any) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div className="my-1 flex items-center">
+        <div className="lg:my-1 pt-5 lg:pt-0 flex items-center">
           <input
             type="text"
             placeholder="Search gif by name"
