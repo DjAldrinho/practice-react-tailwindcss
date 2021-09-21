@@ -18,8 +18,6 @@ export class GifService {
   private static mapResponse(data: any) {
     let gif;
 
-    console.log(data);
-
     if (data) {
       gif = data.map((img: any) => {
         return {
